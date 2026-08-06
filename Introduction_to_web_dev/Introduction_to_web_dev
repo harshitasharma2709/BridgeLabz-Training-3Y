@@ -1,1 +1,54 @@
 this is my assignment
+
+1. Difference between Frontend, Backend, and Full-Stack Development
+Frontend Development:-
+Frontend is the part of a website that users can see and interact with. It includes the design, buttons, menus, images, and layout. It is mainly built using HTML, CSS, and JavaScript.
+Backend Development:-
+Backend is the part that works behind the scenes. It manages data, user accounts, databases, and server-side logic. Technologies like Node.js, Java, Python, and MySQL are commonly used.
+Full-Stack Development:-
+A full-stack developer works on both the frontend and backend. They can build and manage the complete web application.
+Example:-
+In an online shopping website, the product page is the frontend, the login and payment system are handled by the backend, and a full-stack developer can build both parts.
+
+3. How a Browser Requests and Displays a Web Page
+When a user enters a website URL, the browser sends an HTTP request to the web server. The server processes the request and, if needed, gets data from the database. It then sends the webpage files back to the browser. Finally, the browser displays the webpage for the user.
+
+4. Tools Required for Web Development
+Tool	                            Purpose
+VS Code	                      Write and edit code
+Google Chrome	              Test websites
+Node.js	                      Run JavaScript outside the browser
+Git	                          Track code changes
+GitHub	                      Store and share code online
+Live Server	                  Preview the website instantly
+
+5. What is a Web Server?
+A web server is a software or computer that stores website files and sends them to users when they request a webpage through a browser.
+
+Examples:-
+Apache
+Nginx
+Node.js
+Microsoft IIS
+6. Roles in a Project
+
+Frontend Developer: Creates the website's design and user interface.
+Backend Developer: Develops the server-side logic, APIs, and manages data processing.
+Database Administrator (DBA): Stores, organizes, secures, and maintains the project's database.
+
+8. Difference Between Static and Dynamic Websites
+Static Website:-
+A static website has fixed content that remains the same for every user.
+Example: A personal portfolio website.
+Dynamic Website:-
+A dynamic website displays different content based on user interaction or database information.
+Example: Amazon, Facebook, or Instagram.
+
+9. Five Web Browsers and Their Rendering Engines
+Browser	               Rendering Engine
+Google Chrome	        Blink
+Microsoft Edge	        Blink
+Mozilla Firefox	        Gecko
+Apple Safari	        WebKit
+Opera	                Blink
+Rendering engines convert HTML, CSS, and JavaScript into the webpage that users see. Different browsers use different engines, which may affect performance and compatibility.
