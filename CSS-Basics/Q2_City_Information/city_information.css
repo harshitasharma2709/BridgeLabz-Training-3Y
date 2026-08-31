@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4efe8;
+    color: #2d241f;
+}
+
+header {
+    padding: 35px;
+    text-align: center;
+    background-color: #5a3326;
+    color: white;
+}
+
+nav {
+    padding: 18px;
+    text-align: center;
+    background-color: #2d241f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+main section {
+    width: 100%;
+    min-height: 55vh;
+    padding: 10vh 8%;
+    border-bottom: 4px solid white;
+}
+
+#history {
+    background: linear-gradient(135deg, #f5d6a6, #d99a68);
+}
+
+#culture {
+    background: radial-gradient(circle, #f4d9e8, #b97a9b);
+}
+
+#places {
+    background: linear-gradient(120deg, #c9e7e3, #72a8a2);
+}
+
+section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+section p {
+    max-width: 750px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #2d241f;
+    color: white;
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    color: #202733;
+}
+
+.team {
+    padding: 50px 6%;
+}
+
+.team h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #c7ced8;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    min-height: 230px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card h3 {
+    font-weight: 600;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.lead {
+    background-color: #e6f0ff;
+    border: 3px solid #3567b5;
+}
+
+@media (max-width: 600px) {
+
+    .team-container {
+        flex-direction: column;
+    }
+
+}
