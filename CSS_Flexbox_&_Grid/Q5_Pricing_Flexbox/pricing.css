@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f5f7;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    min-height: 350px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+
+    animation: fadeIn 1s ease;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Middle card highlighted */
+.popular {
+    background-color: #dceeff;
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

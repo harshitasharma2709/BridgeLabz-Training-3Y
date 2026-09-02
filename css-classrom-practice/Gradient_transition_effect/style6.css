@@ -1,0 +1,38 @@
+.container {
+    width: 80%;
+    height: 500px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    /* background-color: rgb(195, 79, 96); */
+    text-align: center;
+    /* background-image: linear-gradient(to right bottom,rgb(68, 58, 58), rgb(222, 123, 123)); */
+    /* background-image: linear-gradient(90deg,black 0% 50%, red 50% 100%, red 60% 100%); */
+    /* background-image: repeating-linear-gradient(125deg,rgb(208, 128, 128) 0% 20%, rgb(208, 88, 88) 20% 40%); */
+    background-image: repeating-radial-gradient(rgb(208, 128, 128) 0% 20%, rgb(208, 88, 88) 20% 40%);
+    transition-property: transform;
+    Transition-duration: 2s;
+    transition-timing-function: ease;
+    transition: transform 1s ease;
+}
+
+.card:hover{
+    box-shadow: -10px -10px 10px rgb(98, 80, 80), 10px 10px 10px rgb(198, 128, 128);
+    /* transform: translatex(-50px);
+    transform: scale(1.1);
+    transform: rotate(360deg); */
+
+    /* transform: translate(10px, 10px) scale(1.6) rotate(360deg); */
+    transform: skew(10deg, 10deg);
+}
+
+/* transform have 3 property */
+/* 1. translate */
+/* 2. rotate */
+/* 3. scale */
