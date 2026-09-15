@@ -1,0 +1,88 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #264653;
+    color: white;
+}
+
+/* Flexbox aligns buttons */
+.button-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common button styling */
+.btn {
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    background-color: #1d3557;
+    color: white;
+    border: 2px solid #1d3557;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: #457b9d;
+    color: white;
+    border: 2px solid #457b9d;
+}
+
+/* Outline button */
+.outline {
+    background-color: white;
+    color: #1d3557;
+    border: 2px solid #1d3557;
+}
+
+/* Hover effect */
+.btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px #aaa;
+}
+
+/* Active effect */
+.btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+/* Focus pseudo-class */
+.btn:focus {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+/* Disabled pseudo-class */
+.btn:disabled {
+    background-color: #bbb;
+    color: #666;
+    border-color: #999;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #264653;
+    color: white;
+}

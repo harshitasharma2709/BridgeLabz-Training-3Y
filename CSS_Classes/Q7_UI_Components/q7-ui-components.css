@@ -1,0 +1,105 @@
+/* Basic page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+}
+
+/* Header */
+header {
+    padding: 25px;
+    text-align: center;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Center UI card using Flexbox */
+main {
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card-like container */
+.ui-card {
+    width: 450px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #bbb;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Search bar */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+}
+
+/* Search input focus */
+.search-box input:focus {
+    border-color: #457b9d;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Button group */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Primary button */
+.primary-btn {
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Secondary button */
+.secondary-btn {
+    background-color: #e9ecef;
+}
+
+/* Dropdown */
+select {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+}
+
+/* Dropdown focus */
+select:focus {
+    outline: none;
+    border-color: #457b9d;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #1d3557;
+    color: white;
+}

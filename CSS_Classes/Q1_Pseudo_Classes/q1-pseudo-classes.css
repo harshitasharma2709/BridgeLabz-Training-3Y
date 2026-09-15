@@ -1,0 +1,97 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Flexbox aligns all examples in one row */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 60px 30px;
+}
+
+/* Common example card */
+.example {
+    width: 220px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* :hover pseudo-class */
+.example a:hover {
+    color: white;
+    background-color: #457b9d;
+}
+
+/* :focus pseudo-class */
+.example button:focus {
+    background-color: #2a9d8f;
+    color: white;
+    outline: 3px solid #a8dadc;
+}
+
+/* :active pseudo-class */
+.example a:active {
+    color: red;
+    background-color: yellow;
+}
+
+/* :nth-child() pseudo-class */
+.example li:nth-child(2) {
+    background-color: #a8dadc;
+    font-weight: bold;
+}
+
+/* Link and button styling */
+.example a,
+.example button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #e9ecef;
+    color: #222;
+    cursor: pointer;
+}
+
+/* List styling */
+.example ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.example li {
+    padding: 7px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .examples {
+        flex-wrap: wrap;
+    }
+}
