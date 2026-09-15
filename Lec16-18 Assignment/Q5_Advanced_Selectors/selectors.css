@@ -1,0 +1,79 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #293241;
+    color: white;
+}
+
+/* Attribute selector: selects text inputs */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #555;
+}
+
+/* Attribute selector: links beginning with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pseudo-class :hover */
+li:hover {
+    background-color: lightblue;
+}
+
+/* Pseudo-class :focus */
+input:focus {
+    border-color: blue;
+    outline: none;
+}
+
+/* Pseudo-class :nth-child() */
+li:nth-child(2) {
+    color: red;
+    font-weight: bold;
+}
+
+/* Child combinator > */
+.parent > p {
+    color: purple;
+}
+
+/* Descendant combinator */
+.parent p {
+    font-style: italic;
+}
+
+/* Adjacent sibling combinator + */
+.sibling-one + .sibling-two {
+    color: orange;
+}
+
+/* General sibling combinator ~ */
+.sibling-one ~ .sibling-three {
+    color: brown;
+}
+
+/* Pseudo-element ::before */
+.items h2::before {
+    content: "★ ";
+}
+
+/* Pseudo-element ::after */
+.items h2::after {
+    content: " ★";
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    background-color: #293241;
+    color: white;
+}

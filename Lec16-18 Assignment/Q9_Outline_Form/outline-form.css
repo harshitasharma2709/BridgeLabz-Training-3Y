@@ -1,0 +1,75 @@
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}
+
+/* Center form */
+.form-container {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form styling */
+form {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #bbb;
+}
+
+/* Uniform spacing */
+label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    outline: 3px solid transparent;
+    outline-offset: 3px;
+}
+
+/* Different outline on focus */
+input:focus,
+textarea:focus {
+    outline: 3px solid #457b9d;
+    border-color: #1d3557;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+/* Page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #3d405b;
+    color: white;
+}
+
+/* Horizontal arrangement using Flexbox */
+.transform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 30px;
+}
+
+/* Common box styling */
+.box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81b29a;
+    border: 2px solid #333;
+    transition: all 0.4s ease;
+}
+
+/* Rotate transformation */
+.rotate-box:hover {
+    transform: rotate(20deg);
+}
+
+/* Scale transformation */
+.scale-box:hover {
+    transform: scale(1.2);
+}
+
+/* Translate transformation */
+.translate-box:hover {
+    transform: translate(20px, -20px);
+}
+
+/* Skew transformation */
+.skew-box:hover {
+    transform: skew(15deg);
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    background-color: #3d405b;
+    color: white;
+}
