@@ -1,0 +1,105 @@
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Required CSS Grid layout */
+.gallery {
+    display: grid;
+
+    /* Required property */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 25px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Image card */
+.gallery-card {
+    margin: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #bbb;
+}
+
+/* Common image styling */
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    /* Smooth filter transition */
+    transition: filter 0.4s ease;
+}
+
+/* Different filters */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(60%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+.gallery-card:hover img {
+    filter: none;
+}
+
+/* Caption */
+figcaption {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Single column below 600px */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}

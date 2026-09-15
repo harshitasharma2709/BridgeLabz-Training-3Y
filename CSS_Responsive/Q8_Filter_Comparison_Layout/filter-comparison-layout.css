@@ -1,0 +1,89 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #264653;
+    color: white;
+}
+
+/* Side-by-side layout */
+.comparison {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Figure */
+figure {
+    margin: 0;
+    width: 45%;
+    max-width: 500px;
+
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px #ccc;
+}
+
+/* Images */
+figure img {
+    width: 100%;
+    display: block;
+
+    transition: filter 0.5s ease;
+}
+
+/* Right image filter */
+.filtered {
+    filter: brightness(60%) contrast(140%);
+}
+
+/* Remove filter on hover */
+figure:hover .filtered {
+    filter: none;
+}
+
+/* Captions */
+figcaption {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #264653;
+    color: white;
+}
+
+/* Stack below 700px */
+@media (max-width: 700px) {
+
+    .comparison {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    figure {
+        width: 100%;
+    }
+}

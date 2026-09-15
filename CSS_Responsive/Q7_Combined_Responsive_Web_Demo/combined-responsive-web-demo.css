@@ -1,0 +1,129 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header using Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    padding: 50px;
+}
+
+/* Sections */
+.demo-section {
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px #ccc;
+
+    /* Fade-in animation */
+    animation: fadeIn 1s ease-in-out;
+
+    transition: transform 0.3s ease;
+}
+
+/* Hover */
+.demo-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Gallery */
+.images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Stack all sections below 700px */
+@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}

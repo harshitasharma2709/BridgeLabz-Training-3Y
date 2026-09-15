@@ -1,0 +1,104 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header using Flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Feature section */
+.features {
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Feature boxes */
+.feature-box {
+    flex: 1;
+    max-width: 300px;
+    padding: 35px;
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px #ccc;
+
+    /* Required transition */
+    transition: transform 0.3s ease;
+}
+
+/* Scale on hover */
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Stack boxes below 750px */
+@media (max-width: 750px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 90%;
+        max-width: 500px;
+    }
+}

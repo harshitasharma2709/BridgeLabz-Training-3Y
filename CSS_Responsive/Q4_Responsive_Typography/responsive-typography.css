@@ -1,0 +1,65 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Main content */
+.typography-section {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 50px;
+
+    text-align: center;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ccc;
+}
+
+/* Required clamp() heading */
+.typography-section h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 30px;
+}
+
+/* Required clamp() paragraph */
+.typography-section p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Improve readability below 700px */
+@media (max-width: 700px) {
+
+    .typography-section {
+        margin: 50px 20px;
+        padding: 30px 20px;
+    }
+
+    .typography-section p {
+        line-height: 1.9;
+    }
+}

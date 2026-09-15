@@ -1,0 +1,79 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Grid layout */
+.principles {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    padding: 50px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Principle boxes */
+.principle {
+    padding: 30px;
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px #ccc;
+
+    transition: all 0.4s ease;
+}
+
+/* Hover gradient and text change */
+.principle:hover {
+    background: linear-gradient(135deg, #457b9d, #2a9d8f);
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+/* Code example */
+pre {
+    padding: 15px;
+    background-color: #eef2f7;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Single column below 600px */
+@media (max-width: 600px) {
+
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
