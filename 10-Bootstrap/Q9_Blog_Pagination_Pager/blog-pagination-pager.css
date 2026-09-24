@@ -1,0 +1,11 @@
+/* Page background */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Article styling */
+article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}

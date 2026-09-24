@@ -1,0 +1,13 @@
+/* Page styling */
+body {
+    background-color: #f4f6f8;
+}
+
+/* Task hover */
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #eef5ff;
+}
