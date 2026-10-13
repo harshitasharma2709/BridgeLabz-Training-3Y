@@ -1,9 +1,0 @@
-/* Product hover transition */
-.product-card {
-    transition: transform 0.3s ease;
-}
-
-/* Slight scale on hover */
-.product-card:hover {
-    transform: translateY(-5px);
-}
